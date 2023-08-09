@@ -1,0 +1,14 @@
+name: loan_project
+channels:
+- defaults
+dependencies:
+- pandas==1.5.2
+- numpy==1.23.5
+- xgboost==1.7.3
+- shap
+- seaborn==0.12.1
+
+
+# Create a conda environment from the .yml files: use command: `conda env create -f environment.yml`
+# Activate the conda environment: use command: `conda activate loan_project`
+# If using in Jupyter Notebook, you might need to install jupyter kernel for the virtual environment using `ipython kernel install --user --name=<venv_name>`
