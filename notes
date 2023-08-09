@@ -1,0 +1,52 @@
+'NAME_CONTRACT_TYPE': cat, onehot
+'CODE_GENDER': cat, onehot
+'FLAG_OWN_CAR': cat, onehot
+'FLAG_OWN_REALTY': cat, onehot
+'CNT_CHILDREN': ord, combine less frequent
+'AMT_INCOME_TOTAL': num, log transform
+'AMT_CREDIT': num, log transform
+'AMT_ANNUITY': num, log transform, impute from AMT_CREDIT, add missing indicator
+'AMT_GOODS_PRICE': num, log transform, impute from AMT_CREDIT, add missing indicator
+'NAME_TYPE_SUITE': cat, fillna with "missing", onehot
+'NAME_INCOME_TYPE': cat, onehot
+'NAME_EDUCATION_TYPE': cat, onehot
+'NAME_FAMILY_STATUS': cat, onehot
+'NAME_HOUSING_TYPE':cat, onehot
+'REGION_POPULATION_RELATIVE': num
+'DAYS_BIRTH': num
+'DAYS_EMPLOYED': num, error numbers
+'DAYS_REGISTRATION': num
+'DAYS_ID_PUBLISH': num
+'FLAG_MOBIL': cat
+'FLAG_EMP_PHONE': cat
+'FLAG_WORK_PHONE': cat
+'FLAG_CONT_MOBILE': cat
+'FLAG_PHONE': cat
+'FLAG_EMAIL': cat
+'OCCUPATION_TYPE': cat, fillna with 'other', onehot
+'CNT_FAM_MEMBERS': ord, combine less frequent, impute from CNT_CHILDREN+1
+'REGION_RATING_CLIENT': num
+'REGION_RATING_CLIENT_W_CITY': num
+'WEEKDAY_APPR_PROCESS_START': cat, onehot
+'HOUR_APPR_PROCESS_START'; cat, onehot
+'REG_REGION_NOT_LIVE_REGION': cat
+'REG_REGION_NOT_WORK_REGION': cat
+'LIVE_REGION_NOT_WORK_REGION': cat
+'REG_CITY_NOT_LIVE_CITY': cat
+'REG_CITY_NOT_WORK_CITY': cat
+'LIVE_CITY_NOT_WORK_CITY': cat
+'ORGANIZATION_TYPE': cat, onehot
+'EXT_SOURCE_2': num, impute missing values, add missing indicator
+'EXT_SOURCE_3': num, impute missing values, add missing indicator
+'OBS_30_CNT_SOCIAL_CIRCLE': ord, add missing indicator
+'DEF_30_CNT_SOCIAL_CIRCLE': ord, add missing indicator
+'OBS_60_CNT_SOCIAL_CIRCLE': ord, add missing indicator
+'DEF_60_CNT_SOCIAL_CIRCLE': ord, add missing indicator
+'DAYS_LAST_PHONE_CHANGE': num, fillna with 0
+'FLAG_DOCUMENT': cat
+'AMT_REQ_CREDIT_BUREAU_HOUR': ord, add missing indicator
+'AMT_REQ_CREDIT_BUREAU_DAY': ord, add missing indicator
+'AMT_REQ_CREDIT_BUREAU_WEEK': ord, add missing indicator
+'AMT_REQ_CREDIT_BUREAU_MON': ord, add missing indicator
+'AMT_REQ_CREDIT_BUREAU_QRT': ord, add missing indicator
+'AMT_REQ_CREDIT_BUREAU_YEAR': ord, add missing indicator
