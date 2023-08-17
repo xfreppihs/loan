@@ -1,10 +1,17 @@
 name: loan_project
 channels:
-- defaults
+  - defaults
 dependencies:
-- pandas==1.5.2
-- numpy==1.23.5
-- seaborn==0.12.1
+  - shap
+  - xgboost==1.7.3
+  - seaborn==0.12.1
+  - pandas==1.5.2
+  - numpy==1.23.5
+  - mlflow
+  - pip
+  - pip:
+    - imblearn
+    - hyperopt
 
 
 # Create a conda environment from the .yml files: use command: `conda env create -f environment.yml`
