@@ -1,0 +1,12 @@
+name: loan_default_detection
+
+conda_env: environment.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_trials: {type: int, default: 64}
+      class_balance: {type: bool, default: False}
+      objective_metric: {type: string, default: "logloss"}
+      undersample: {type: bool, default: True}
+    command: "python main.py {n_trials} {class_balance} {objective_metric} {undersample}"
