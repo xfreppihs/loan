@@ -52,6 +52,8 @@ st.write(
 st.subheader('SHAP values for this prediction')
 st.write(
     "E[f(X)] is the mean predicted log-odds of all the test applicants. f(X) is the predicted log-odds of applicant ", applicant_index, ". The waterfall plot shows how each feature contributes to the prediction deviating from the mean.")
+st.markdown("<span style='color:red'>It may take 5 min to get the SHAP values when runing the first time.</span>",
+            unsafe_allow_html=True)
 
 
 @st.cache_data
